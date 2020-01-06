@@ -15,7 +15,7 @@ for (let article of articles) {
           like.classList.add("activated-heart")
         })
         .catch(() => {
-          
+
         })
     }
 
