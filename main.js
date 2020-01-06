@@ -7,7 +7,8 @@ const articles = document.querySelectorAll("article.media-post")
 for (let article of articles) {
   const like = article.querySelector(".like")
   like.addEventListener('click', function(event) {
-    alert("boop")
+    alert(article.id)
+    const articleid = article.id
   });
 }
 
