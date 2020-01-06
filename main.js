@@ -3,6 +3,13 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const articles = document.querySelectorAll("article.media-post")
+for (let article of articles) {
+  const like = article.querySelector(".like")
+  like.addEventListener('click', function(event) {
+    alert("boop")
+  });
+}
 
 
 
