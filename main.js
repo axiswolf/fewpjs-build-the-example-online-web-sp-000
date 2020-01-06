@@ -7,8 +7,18 @@ const articles = document.querySelectorAll("article.media-post")
 for (let article of articles) {
   const like = article.querySelector(".like")
   like.addEventListener('click', function(event) {
-    alert(article.id)
-    const articleid = article.id
+    if (like.classList.contains("activated-heart")) {
+      // unlike
+    } else {
+      mimicServerCall()
+        .then(() => {
+          
+        })
+        .catch(() => {
+          
+        })
+    }
+
   });
 }
 
