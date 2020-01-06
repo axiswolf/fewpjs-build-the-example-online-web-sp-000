@@ -12,10 +12,10 @@ for (let article of articles) {
     } else {
       mimicServerCall()
         .then(() => {
-          
+
         })
         .catch(() => {
-          
+
         })
     }
 
