@@ -8,14 +8,14 @@ for (let article of articles) {
   const like = article.querySelector(".like")
   like.addEventListener('click', function(event) {
     if (like.classList.contains("activated-heart")) {
-      // unlike
+      like.classList.remove("activated-heart")
     } else {
       mimicServerCall()
         .then(() => {
-
+          like.classList.add("activated-heart")
         })
         .catch(() => {
-
+          
         })
     }
 
